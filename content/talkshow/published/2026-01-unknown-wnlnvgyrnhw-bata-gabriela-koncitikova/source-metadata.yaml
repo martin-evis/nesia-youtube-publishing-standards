@@ -1,0 +1,48 @@
+schema_version: "0.3"
+record_type: "published_video_source"
+video_type: "talkshow"
+episode_variant: "full_episode"
+
+video_id: "wnlNvGYrnhw"
+video_url: "https://youtu.be/wnlNvGYrnhw"
+thumbnail_url: "https://i.ytimg.com/vi/wnlNvGYrnhw/maxresdefault.jpg"
+playlist_url: "https://www.youtube.com/playlist?list=PLUXZ_uBD6mO7SBnGWdxhZYnBHK6nHkrRL"
+playlist_status: "needs_confirmation_from_youtube_studio"
+
+published_date: "2026-01"
+published_date_text: "Január 2026"
+published_date_precision: "month"
+published_date_verification_status: "needs_exact_day"
+
+current_title: "Riaditeľka Nadácie Tomáša Baťu | NESIA TALKSHOW : Čo by robil Tomáš Baťa dnes: Gabriela Končitíková"
+current_description_status: "available_from_user_input"
+
+hashtags: []
+hashtags_status: "nedostupné z API; doplniť"
+tags: []
+tags_status: "nedostupné z API; doplniť"
+chapters_available: null
+chapters_status: "neznáme; doplniť"
+
+moderator: "Andrea Vadkerti"
+guests:
+  - "Gabriela Končitíková"
+
+topic_summary: >-
+  Baťov systém riadenia a Baťovský leadership v súčasnosti. O tom, ako Tomáš Baťa
+  nevyrábal len topánky, ale predovšetkým budoval ľudí. Rozhovor prepája výkon,
+  hodnoty, zisk, zmysel a službu človeku ako formu líderstva.
+
+performance_public:
+  views: 21000
+  views_precision: "more_than"
+  likes: null
+  metrics_status: "približný údaj viac ako 21 000 zhliadnutí; doplniť presný stav"
+
+source_status:
+  raw_input: "complete_for_v0.3"
+  description: "available"
+  transcript: "missing"
+  chapters: "unknown"
+  studio_tags: "missing"
+  studio_analytics: "not_in_repo"
