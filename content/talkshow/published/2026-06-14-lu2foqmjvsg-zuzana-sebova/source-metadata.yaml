@@ -1,0 +1,49 @@
+schema_version: "0.3"
+record_type: "published_video_source"
+video_type: "talkshow"
+episode_variant: "full_episode_with_music_segment"
+
+video_id: "LU2foQMJVsg"
+video_url: "https://www.youtube.com/watch?v=LU2foQMJVsg"
+thumbnail_url: "https://i.ytimg.com/vi/LU2foQMJVsg/maxresdefault.jpg"
+playlist_url: "https://www.youtube.com/playlist?list=PLUXZ_uBD6mO7SBnGWdxhZYnBHK6nHkrRL"
+playlist_status: "needs_confirmation_from_youtube_studio"
+
+published_date: "2026-06-14"
+published_date_precision: "day"
+published_date_verification_status: "needs_followup_after_fresh_publish"
+
+current_title: "Nedá sa vyhovieť každému. Zuzana Šebová o materstve, hejtoch a humore | NESIA TALKSHOW"
+current_description: null
+current_description_status: "nedostupné z API; doplniť manuálne alebo zo Studia"
+
+hashtags: []
+hashtags_status: "nedostupné z API; doplniť"
+tags: []
+tags_status: "nedostupné z API; doplniť"
+chapters_available: null
+chapters_status: "neznáme; doplniť"
+
+moderator: "Andrea Vadkerti"
+guests:
+  - "Zuzana Šebová"
+additional_elements:
+  - "hudobný vstup dua Morena"
+
+topic_summary: >-
+  Zuzana Šebová v úprimnom rozhovore hovorí o svojej nehereckej tvári,
+  materstve, hejtoch, nevyžiadaných radách, výzore, manželstve s Mišom Kubovčíkom,
+  humore, vyrovnanosti a zdravom sebavedomí.
+
+performance_public:
+  views: null
+  likes: null
+  metrics_status: "čerstvo publikované; doplniť po odstupe"
+
+source_status:
+  raw_input: "complete_for_v0.3"
+  description: "missing"
+  transcript: "missing"
+  chapters: "unknown"
+  studio_tags: "missing"
+  studio_analytics: "not_in_repo"
