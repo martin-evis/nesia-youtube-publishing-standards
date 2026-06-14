@@ -1,0 +1,47 @@
+schema_version: "0.3"
+record_type: "published_video_source"
+video_type: "talkshow"
+episode_variant: "full_episode"
+
+video_id: "KdZ-HHPUpWs"
+video_url: "https://youtu.be/KdZ-HHPUpWs"
+thumbnail_url: "https://i.ytimg.com/vi/KdZ-HHPUpWs/maxresdefault.jpg"
+playlist_url: "https://www.youtube.com/playlist?list=PLUXZ_uBD6mO7SBnGWdxhZYnBHK6nHkrRL"
+playlist_status: "needs_confirmation_from_youtube_studio"
+
+published_date: "2025-10-31"
+published_date_precision: "day"
+published_date_verification_status: "provided_by_user_export"
+
+current_title: "Zákaznícka psychológia: Ako nakupujeme krásu (a prečo nejde o cenu) | NESIA Talkshow: Matej Šucha"
+current_description: null
+current_description_status: "nedostupné z API; doplniť manuálne alebo zo Studia"
+
+hashtags: []
+hashtags_status: "nedostupné z API; doplniť"
+tags: []
+tags_status: "nedostupné z API; doplniť"
+chapters_available: null
+chapters_status: "neznáme; doplniť"
+
+moderator: "Andrea Vadkerti"
+guests:
+  - "Matej Šucha"
+
+topic_summary: >-
+  Behaviorálna ekonómia a zákaznícka psychológia: podvedomie pri nákupných
+  rozhodnutiach, predvídateľná iracionalita, kontext predaja, cenové ukotvenie,
+  efekt vlastníctva a odstraňovanie psychologických bariér zákazníka.
+
+performance_public:
+  views: 18962
+  likes: null
+  metrics_status: "views dodané používateľom; likes nedodané"
+
+source_status:
+  raw_input: "complete_for_v0.3"
+  description: "missing"
+  transcript: "missing"
+  chapters: "unknown"
+  studio_tags: "missing"
+  studio_analytics: "not_in_repo"
