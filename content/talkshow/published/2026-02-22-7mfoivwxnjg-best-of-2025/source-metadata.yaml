@@ -1,0 +1,54 @@
+schema_version: "0.3"
+record_type: "published_video_source"
+video_type: "talkshow"
+episode_variant: "best_of_compilation"
+
+video_id: "7MfOiVWXNJg"
+video_url: "https://youtu.be/7MfOiVWXNJg"
+thumbnail_url: "https://i.ytimg.com/vi/7MfOiVWXNJg/maxresdefault.jpg"
+playlist_url: "https://www.youtube.com/playlist?list=PLUXZ_uBD6mO7SBnGWdxhZYnBHK6nHkrRL"
+playlist_status: "needs_confirmation_from_youtube_studio"
+
+published_date: "2026-02-22"
+published_date_precision: "day"
+published_date_verification_status: "provided_by_user_export"
+
+current_title: "BEST OF NESIA TALKSHOW 2025 s Andreou Vadkerti"
+current_description: null
+current_description_status: "nedostupné z API; doplniť manuálne alebo zo Studia"
+
+hashtags: []
+hashtags_status: "nedostupné z API; doplniť"
+tags: []
+tags_status: "nedostupné z API; doplniť"
+chapters_available: null
+chapters_status: "neznáme; doplniť"
+
+moderator: "Andrea Vadkerti"
+guests:
+  - "Rôzni hostia z predchádzajúcich epizód"
+referenced_guests_examples:
+  - "Martin Spano"
+  - "Gabriela Končitíková"
+  - "Matej Šucha"
+  - "Karin Majtánová"
+  - "Lucia Hablovičová"
+
+topic_summary: >-
+  Zostrih najlepších a najzaujímavejších momentov z NESIA Talkshow za rok 2025.
+  Mix tém: AI, Baťov systém, zákaznícka psychológia, krása, zmysel života,
+  prekonávanie strachu a osobné behaviorálne hacky.
+
+performance_public:
+  views: 47000
+  views_precision: "more_than"
+  likes: null
+  metrics_status: "približný údaj vyše 47 000 zhliadnutí; doplniť presný stav"
+
+source_status:
+  raw_input: "complete_for_v0.3"
+  description: "missing"
+  transcript: "missing"
+  chapters: "unknown"
+  studio_tags: "missing"
+  studio_analytics: "not_in_repo"
