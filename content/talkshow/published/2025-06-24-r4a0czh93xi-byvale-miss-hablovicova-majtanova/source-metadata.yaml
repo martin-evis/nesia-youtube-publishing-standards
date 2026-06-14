@@ -1,0 +1,48 @@
+schema_version: "0.3"
+record_type: "published_video_source"
+video_type: "talkshow"
+episode_variant: "full_episode"
+
+video_id: "R4A0CzH93XI"
+video_url: "https://youtu.be/R4A0CzH93XI"
+thumbnail_url: "https://i.ytimg.com/vi/R4A0CzH93XI/maxresdefault.jpg"
+playlist_url: "https://www.youtube.com/playlist?list=PLUXZ_uBD6mO7SBnGWdxhZYnBHK6nHkrRL"
+playlist_status: "needs_confirmation_from_youtube_studio"
+
+published_date: "2025-06-24"
+published_date_precision: "day"
+published_date_verification_status: "provided_by_user_export"
+
+current_title: "Bývalé MISS: Krása nie je len to, čo vidíme navonok | NESIA Talkshow: L. Hablovičová & K. Majtánová"
+current_description: null
+current_description_status: "nedostupné z technického rozhrania; doplniť manuálne alebo zo Studia"
+
+hashtags: []
+hashtags_status: "nedostupné z API; doplniť"
+tags: []
+tags_status: "nedostupné z API; doplniť"
+chapters_available: null
+chapters_status: "neznáme; doplniť"
+
+moderator: "Andrea Vadkerti"
+guests:
+  - "Lucia Hablovičová"
+  - "Karin Majtánová"
+
+topic_summary: >-
+  Začiatky v modelingu a na súťažiach Miss, rúcanie predsudkov o kráse,
+  dynamika partnerských vzťahov, sebadôvera a nachádzanie zmyslu života
+  cez škôlku a cestovanie.
+
+performance_public:
+  views: 20685
+  likes: 58
+  metrics_status: "verejné / dodané používateľom; overiť pri ďalšom reporte"
+
+source_status:
+  raw_input: "complete_for_v0.3"
+  description: "missing"
+  transcript: "missing"
+  chapters: "unknown"
+  studio_tags: "missing"
+  studio_analytics: "not_in_repo"
