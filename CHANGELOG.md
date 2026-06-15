@@ -1,5 +1,40 @@
 # Changelog
 
+## v0.6.1-sync-descriptions-metadata – 2026-06-15
+
+### Zmenené
+
+- Zosúladené `source-metadata.yaml` so stavom doplnených pôvodných YouTube popisov.
+- Zosúladený `content/talkshow/published/index.md`: všetkých 6 TALKSHOW videí má popis označený ako `OK`.
+- Zosúladený `content/talkshow/missing-data-tracker.md`: popisy a dostupné kapitoly/hashtagy sú označené ako doplnené.
+- Aktualizovaný nadpis a metadáta pre epizódu so Zuzanou Šebovou podľa dodaného pôvodného popisu.
+- Doplnené kapitoly a hashtagy do metadát tam, kde boli súčasťou dodaného popisu.
+
+### Poznámky na kontrolu
+
+- Pri videu `wnlNvGYrnhw` je v pôvodnom popise hashtag `#matejsucha`; ponechaný ako pôvodný údaj, ale označený na manuálnu kontrolu.
+- Pri videu `7MfOiVWXNJg` pôvodný popis neobsahuje kapitoly; pre `best_of_compilation` sú kapitoly voliteľné.
+
+## v0.6.0-complete-original-descriptions – 2026-06-15
+
+### Pridané
+
+- Doplnené pôvodné YouTube popisy pre videá 3, 4, 5 a 6:
+  - Matej Šucha / zákaznícka psychológia,
+  - Gabriela Končitíková / Tomáš Baťa,
+  - BEST OF NESIA TALKSHOW 2025,
+  - Zuzana Šebová.
+- Nahradený pôvodný kratší záznam pri Baťa epizóde plným dodaným popisom s kapitolami.
+
+## v0.5.0-original-descriptions-1-2 – 2026-06-15
+
+### Pridané
+
+- Doplnené pôvodné YouTube popisy pre videá 1 a 2:
+  - Lucia Hablovičová & Karin Majtánová,
+  - Martin Spano.
+- Pri videu 1 boli doplnené aj kapitoly a hashtagy do `source-metadata.yaml`.
+
 ## v0.4.0-public-content-architecture – 2026-06-14
 
 ### Pridané

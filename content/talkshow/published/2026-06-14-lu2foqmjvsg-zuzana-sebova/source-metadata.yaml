@@ -1,7 +1,7 @@
 schema_version: "source-metadata-v1"
-repo_version: "v0.4.0-public-content-architecture"
+repo_version: "v0.6.1-sync-descriptions-metadata"
 record_type: "published_talkshow_source_video"
-record_status: "draft_from_user_supplied_data"
+record_status: "description_metadata_synced_from_user_supplied_data"
 public_repo_safe: true
 
 video:
@@ -28,25 +28,100 @@ people:
   guests:
     - "Zuzana Šebová"
   additional_contributors:
-    - "duo Morena"
-    - "Aťa"
+    - "Morena Band"
+    - "Dominika Kavaschová"
+    - "Andrea Bučko"
 
 current_youtube_metadata:
-  title: "Nedá sa vyhovieť každému. Zuzana Šebová o materstve, hejtoch a humore | NESIA TALKSHOW"
-  description_available: false
-  description_status: "nedostupné z API; doplniť manuálne alebo exportom"
-  hashtags: []
-  hashtags_status: "nedostupné z API; doplniť zo Studia alebo ručne"
+  title: "Mr. Bean, humor a herecké škatuľky | Zuzana Šebová v NESIA Talkshow"
+  description_available: true
+  description_status: "pôvodný YouTube popis dodaný používateľom a uložený v source-description.md"
+  hashtags:
+    - "#nesia"
+    - "#nesiatalkshow"
+    - "#talkshow"
+    - "#andreavadkerti"
+    - "#zuzanasebova"
+    - "#zuzanakubovcikovasebova"
+    - "#humor"
+    - "#komedia"
+    - "#herecka"
+    - "#materstvo"
+    - "#hejty"
+    - "#zivotnypribeh"
+    - "#zeny"
+    - "#zenskasila"
+    - "#inspiracia"
+    - "#zmysel"
+    - "#dizajn"
+    - "#interierovydizajn"
+    - "#nabytoknamieru"
+  hashtags_status: "extrahované z používateľom dodaného pôvodného YouTube popisu"
   tags: []
   tags_status: "nedostupné z API; doplniť zo Studia alebo ručne"
-  chapters_available: null
-  chapters_status: "neznáme; doplniť manuálne, ak existujú"
+  chapters_available: true
+  chapters_status: "extrahované z používateľom dodaného pôvodného YouTube popisu"
+  chapters:
+    - time: "00:00"
+      title: "Úvod do NESIA Talkshow"
+    - time: "00:51"
+      title: "Kto je Zuzka Šebová, keď práve nehrá?"
+    - time: "02:28"
+      title: "Akí sú herci doma?"
+    - time: "05:48"
+      title: "Michal Kubovčík: partner, herec a človek mnohých talentov"
+    - time: "10:23"
+      title: "Výhody a výzvy vzťahu dvoch hercov"
+    - time: "12:41"
+      title: "Vedela by Zuzka robiť aj niečo iné ako herectvo?"
+    - time: "14:31"
+      title: "Šťastná povaha, práca a vďačnosť: príčina alebo dôsledok?"
+    - time: "17:27"
+      title: "Prečo zo seba Zuzka Šebová a Michal Kubovčík neurobia family brand"
+    - time: "18:34"
+      title: "Materstvo ako životná rola"
+    - time: "23:40"
+      title: "Keď verejná mienka dáva zabrať"
+    - time: "25:34"
+      title: "Hejt, kritika a materstvo pod drobnohľadom"
+    - time: "29:40"
+      title: "Nevhodné otázky a iné spoločenské disciplíny"
+    - time: "32:04"
+      title: "Hranice, deti a verejný priestor"
+    - time: "33:09"
+      title: "Hudobný vstup: Morena Band"
+    - time: "34:00"
+      title: "Pieseň o samote a láskach minulých"
+    - time: "43:15"
+      title: "Zákulisie televíznych projektov"
+    - time: "45:02"
+      title: "Inkognito, ocenenia OTO a učenie sa v priamom prenose"
+    - time: "49:01"
+      title: "Let’s Dance a rešpekt pred veľkými formátmi"
+    - time: "53:04"
+      title: "Prečo Zuzka vlastne nerobí stand-up?"
+    - time: "57:02"
+      title: "Slovensko a humor: načo nám je v tejto krajine humor?"
+    - time: "1:03:12"
+      title: "Sila ženského humoru"
+    - time: "1:07:04"
+      title: "Lásky minulé, zranenia a inšpirácia"
+    - time: "1:13:03"
+      title: "Kariérna cesta od dievčaťa po zrelú ženu"
+    - time: "1:18:03"
+      title: "Čo Zuzke priniesol humor a práca s publikom"
+    - time: "1:19:55"
+      title: "Pokoj, vlastná cesta a koniec potreby vyhovieť všetkým"
+    - time: "1:21:04"
+      title: "Záver talkshow"
 
 content:
   topic_summary_raw: |
     Zuzana Šebová v úprimnom rozhovore odkrýva svoju nehereckú tvár. Hovorí o materstve, nevyžiadaných radách, hejtoch, predsudkoch ohľadom materstva i výzoru, manželskom živote s Mišom Kubovčíkom, humore, vyrovnanosti a zdravom sebavedomí.
   topic_summary_normalized: |
     Materstvo, hejty, humor, ženské sebavedomie, verejný obraz a schopnosť neriešiť mienku okolia.
+  description_hook: |
+    V ďalšej časti NESIA Talkshow s Andreou Vadkerti sme v bratislavskom showroome privítali herečku a komičku Zuzanu Šebovú.
   themes:
     - "Zuzana Šebová"
     - "materstvo"
@@ -55,6 +130,7 @@ content:
     - "sebavedomie"
     - "ženské témy"
     - "hudobný vstup"
+    - "herectvo"
 
 performance_public:
   views:
@@ -67,8 +143,6 @@ performance_public:
   public_repo_note: "Do public repo nevkladať interné CTR, retenciu, watch time ani traffic sources."
 
 missing_data:
-  - "pôvodný YouTube popis"
-  - "hashtagy"
   - "tagy / štítky"
-  - "kapitoly"
   - "prepis / transcript"
+  - "bezpečný public súhrn výkonu"

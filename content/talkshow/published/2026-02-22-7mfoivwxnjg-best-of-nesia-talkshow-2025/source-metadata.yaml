@@ -1,7 +1,7 @@
 schema_version: "source-metadata-v1"
-repo_version: "v0.4.0-public-content-architecture"
+repo_version: "v0.6.1-sync-descriptions-metadata"
 record_type: "published_talkshow_source_video"
-record_status: "draft_from_user_supplied_data"
+record_status: "description_metadata_synced_from_user_supplied_data"
 public_repo_safe: true
 
 video:
@@ -28,28 +28,40 @@ people:
   guests:
     - "rôzni hostia z predchádzajúcich epizód"
   additional_contributors:
-    - "Martin Spano"
-    - "Gabriela Končitíková"
-    - "Matej Šucha"
-    - "Karin Majtánová"
     - "Lucia Hablovičová"
+    - "Karin Majtánová"
+    - "Martin Spano"
+    - "Matej Šucha"
+    - "Gabriela Končitíková"
 
 current_youtube_metadata:
   title: "BEST OF NESIA TALKSHOW 2025 s Andreou Vadkerti"
-  description_available: false
-  description_status: "nedostupné z API; doplniť manuálne alebo exportom"
-  hashtags: []
-  hashtags_status: "nedostupné z API; doplniť zo Studia alebo ručne"
+  description_available: true
+  description_status: "pôvodný YouTube popis dodaný používateľom a uložený v source-description.md"
+  hashtags:
+    - "#nesia"
+    - "#nesiatalkshow"
+    - "#talkshow"
+    - "#andreavadkerti"
+    - "#NESIA"
+    - "#KrásaZmyselDizajn"
+    - "#dizajn"
+    - "#interier"
+    - "#nabytoknamieru"
+  hashtags_status: "extrahované z používateľom dodaného pôvodného YouTube popisu; duplicitný #talkshow bol zjednotený"
   tags: []
   tags_status: "nedostupné z API; doplniť zo Studia alebo ručne"
-  chapters_available: null
-  chapters_status: "neznáme; doplniť manuálne, ak existujú"
+  chapters_available: false
+  chapters_status: "pôvodný popis neobsahuje kapitoly; pri best_of variante sú voliteľné"
+  chapters: []
 
 content:
   topic_summary_raw: |
     Zostrih najlepších a najzaujímavejších momentov z NESIA Talkshow za rok 2025. Mix myšlienok o umelej inteligencii, Baťovom systéme líderstva, zákazníckej psychológii, predsudkoch o kráse, hľadaní zmyslu života, prekonávaní strachu a behaviorálnych hackoch.
   topic_summary_normalized: |
     Best of zostrih najlepších momentov NESIA Talkshow 2025 ako teaser pre celé epizódy.
+  description_hook: |
+    Viete, čo majú spoločné ženská krása, umelá inteligencia a Baťova filozofia?
   themes:
     - "best of"
     - "teaser"
@@ -58,6 +70,7 @@ content:
     - "zákaznícka psychológia"
     - "krása"
     - "zmysel života"
+    - "Krása. Zmysel. Dizajn."
 
 performance_public:
   views:
@@ -70,8 +83,5 @@ performance_public:
   public_repo_note: "Do public repo nevkladať interné CTR, retenciu, watch time ani traffic sources."
 
 missing_data:
-  - "pôvodný YouTube popis"
-  - "hashtagy"
   - "tagy / štítky"
-  - "kapitoly"
   - "prepis / transcript"

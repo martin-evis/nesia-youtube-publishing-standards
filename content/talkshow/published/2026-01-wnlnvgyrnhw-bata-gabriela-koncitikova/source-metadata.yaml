@@ -1,7 +1,7 @@
 schema_version: "source-metadata-v1"
-repo_version: "v0.4.0-public-content-architecture"
+repo_version: "v0.6.1-sync-descriptions-metadata"
 record_type: "published_talkshow_source_video"
-record_status: "draft_from_user_supplied_data"
+record_status: "description_metadata_synced_from_user_supplied_data"
 public_repo_safe: true
 
 video:
@@ -21,31 +21,118 @@ publication:
 
 format:
   video_type: "talkshow"
-  format_variant: "full_episode"
+  format_variant: "full_episode_with_music_segment"
 
 people:
   moderator: "Andrea Vadkerti"
   guests:
     - "Gabriela Končitíková"
   additional_contributors:
-    []
+    - "Robo Opatovský"
 
 current_youtube_metadata:
   title: "Riaditeľka Nadácie Tomáša Baťu | NESIA TALKSHOW : Čo by robil Tomáš Baťa dnes: Gabriela Končitíková"
   description_available: true
-  description_status: "dostupné z údajov dodaných používateľom"
-  hashtags: []
-  hashtags_status: "nedostupné z API; doplniť zo Studia alebo ručne"
+  description_status: "pôvodný YouTube popis dodaný používateľom a uložený v source-description.md"
+  hashtags:
+    - "#nesia"
+    - "#nesiatalkshow"
+    - "#talkshow"
+    - "#andreavadkerti"
+    - "#tomasbata"
+    - "#batovinstitut"
+    - "#podnikanieakosluzba"
+    - "#interierovydizajn"
+    - "#matejsucha"
+    - "#koncitikova"
+    - "#gabrielakoncitikova"
+  hashtags_status: "extrahované z používateľom dodaného pôvodného YouTube popisu"
+  hashtags_review_note: "Hashtag #matejsucha je ponechaný podľa pôvodného popisu, ale pravdepodobne patrí na manuálnu kontrolu."
   tags: []
   tags_status: "nedostupné z API; doplniť zo Studia alebo ručne"
-  chapters_available: null
-  chapters_status: "neznáme; doplniť manuálne, ak existujú"
+  chapters_available: true
+  chapters_status: "extrahované z používateľom dodaného pôvodného YouTube popisu"
+  chapters:
+    - time: "00:00:09"
+      title: "Otvorenie témy dedičstva Tomáša Baťu a privítanie hosťky"
+    - time: "00:02:10"
+      title: "Ako to celé začalo? Prvý kontakt Gabriely Končitíkovej s Baťovými myšlienkami"
+    - time: "00:03:19"
+      title: "Inšpirácia absolventmi Baťovej školy práce"
+    - time: "00:05:15"
+      title: "Nadácia Tomáša Baťu a korene jeho filozofie"
+    - time: "00:07:14"
+      title: "Historický kontext – embargá, clá a export ekosystémov"
+    - time: "00:09:00"
+      title: "Baťovský ekosystém – človek ako základ biznisu"
+    - time: "00:09:56"
+      title: "Baťov objav: Kľúč k šťastiu"
+    - time: "00:11:43"
+      title: "Prečo sa firma Baťa po 31 rokoch transformovala"
+    - time: "00:12:05"
+      title: "Sebahodnota, AI a nenahraditeľnosť človeka"
+    - time: "00:13:01"
+      title: "Slabosť a sila ľudí očami Baťu"
+    - time: "00:14:05"
+      title: "Prvá charakteristika československého človeka – závisť"
+    - time: "00:16:22"
+      title: "Filozofia dostatku príležitostí"
+    - time: "00:17:03"
+      title: "Transparentnosť firmy a kariérny rast"
+    - time: "00:18:19"
+      title: "Druhá charakteristika – zjednodušovanie a pravidlá"
+    - time: "00:19:07"
+      title: "Tretia charakteristika – vzdychavé typy"
+    - time: "00:21:05"
+      title: "Ekonomický dopad negativity vo firme"
+    - time: "00:23:12"
+      title: "Hudobný vstup – Robo Opatovský"
+    - time: "00:29:41"
+      title: "Vnútorná sila a moment, keď práca prestala Baťu napĺňať"
+    - time: "00:31:30"
+      title: "Harmonický život – telo, duša, myseľ, vzťahy"
+    - time: "00:33:15"
+      title: "Práca vás nikdy neobjíme – význam vzťahov"
+    - time: "00:34:46"
+      title: "Očakávania voči synovi Tomíkovi Jr."
+    - time: "00:37:27"
+      title: "Úloha Márie Baťovej – sila ženy na pozadí lídra"
+    - time: "00:39:14"
+      title: "Ženská energia v riadení"
+    - time: "00:42:06"
+      title: "Slabosti Tomáša Baťu"
+    - time: "00:43:05"
+      title: "Intuícia a vnútorná harmónia"
+    - time: "00:43:47"
+      title: "Pitný režim ako znak dospelosti"
+    - time: "00:44:56"
+      title: "Postoj k alkoholu, drogám a únave"
+    - time: "00:46:53"
+      title: "Baťova osobná tragédia – smrť Leopolda Baťu"
+    - time: "00:50:25"
+      title: "Druhý hudobný vstup – Robo Opatovský"
+    - time: "00:59:31"
+      title: "Ultimátny cieľ podnikania"
+    - time: "01:01:53"
+      title: "Morálna záveť Tomáša Baťu"
+    - time: "01:04:21"
+      title: "Baťa a politika – štát ako podnik"
+    - time: "01:08:11"
+      title: "Systémová filozofia morálky"
+    - time: "01:09:42"
+      title: "Ako by Baťa vnímal dnešný svet"
+    - time: "01:13:14"
+      title: "Poďakovanie hosťke a záver"
+    - time: "01:14:00"
+      title: "Záverečný hudobný vstup – Robo Opatovský"
 
 content:
   topic_summary_raw: |
     Baťov systém riadenia a Baťovský leadership v súčasnosti. O tom, ako Tomáš Baťa nevyrábal len topánky, ale predovšetkým budoval ľudí. Rozhovor prepája témy výkonu a hodnôt, zisku a zmysluplnej služby človeku ako najvyššej formy líderstva.
   topic_summary_normalized: |
     Baťov leadership, podnikanie ako služba, hodnoty, výkon, zmysel a ľudskosť v súčasnom biznise.
+  description_hook: |
+    Známy československý podnikateľ a vizionár Tomáš Baťa predbehol svoju dobu o celé desaťročia.
   themes:
     - "Tomáš Baťa"
     - "Baťov leadership"
@@ -54,6 +141,7 @@ content:
     - "výkon"
     - "služba človeku"
     - "zmysel práce"
+    - "podnikanie s charakterom"
 
 performance_public:
   views:
@@ -66,7 +154,6 @@ performance_public:
   public_repo_note: "Do public repo nevkladať interné CTR, retenciu, watch time ani traffic sources."
 
 missing_data:
-  - "hashtagy"
   - "tagy / štítky"
-  - "kapitoly"
   - "prepis / transcript"
+  - "presný deň publikovania"
