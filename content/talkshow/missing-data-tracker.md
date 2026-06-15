@@ -4,21 +4,20 @@ Tento súbor aktualizuj vždy, keď doplníš pôvodný popis, hashtagy, tagy, k
 
 | Video ID | Popis | Hashtagy | Tagy | Playlist | Kapitoly | Prepis | Dátum | Výkon |
 |---|---|---|---|---|---|---|---|---|
-| R4A0CzH93XI | chýba | chýbajú | chýbajú | OK – playlist dodaný používateľom | neznáme | chýba | OK | OK |
-| hKhO7xT_IxQ | chýba | chýbajú | chýbajú | OK – playlist dodaný používateľom | neznáme | chýba | OK | OK |
-| KdZ-HHPUpWs | chýba | chýbajú | chýbajú | OK – playlist dodaný používateľom | neznáme | chýba | OK | OK |
-| wnlNvGYrnhw | OK | chýbajú | chýbajú | OK – playlist dodaný používateľom | neznáme | chýba | needs_exact_day | OK |
-| 7MfOiVWXNJg | chýba | chýbajú | chýbajú | OK – playlist dodaný používateľom | neznáme | chýba | OK | OK |
-| LU2foQMJVsg | chýba | chýbajú | chýbajú | OK – playlist dodaný používateľom | neznáme | chýba | needs_followup_after_fresh_publish | chýba |
+| R4A0CzH93XI | OK | OK – extrahované z popisu | chýbajú | OK – playlist dodaný používateľom | OK | chýba | OK | OK |
+| hKhO7xT_IxQ | OK | OK – extrahované z popisu | chýbajú | OK – playlist dodaný používateľom | OK | chýba | OK | OK |
+| KdZ-HHPUpWs | OK | OK – extrahované z popisu | chýbajú | OK – playlist dodaný používateľom | OK | chýba | OK | OK |
+| wnlNvGYrnhw | OK | OK – extrahované z popisu; skontrolovať #matejsucha | chýbajú | OK – playlist dodaný používateľom | OK | chýba | needs_exact_day | OK |
+| 7MfOiVWXNJg | OK | OK – extrahované z popisu | chýbajú | OK – playlist dodaný používateľom | bez kapitol v popise / voliteľné pre best_of | chýba | OK | OK |
+| LU2foQMJVsg | OK | OK – extrahované z popisu | chýbajú | OK – playlist dodaný používateľom | OK | chýba | needs_followup_after_fresh_publish | chýba |
 
 ## Priorita dopĺňania
 
-1. Pôvodné YouTube popisy.
-2. Prepisy / titulky.
-3. Kapitoly.
-4. Hashtagy.
-5. Tagy zo Studia.
-6. Bezpečný public súhrn výkonu.
+1. Prepisy / titulky.
+2. Tagy zo Studia.
+3. Bezpečný public súhrn výkonu pre video `LU2foQMJVsg`.
+4. Presný dátum publikovania pre video `wnlNvGYrnhw`, ak bude dostupný.
+5. Manuálna kontrola hashtagov, najmä `#matejsucha` pri videu `wnlNvGYrnhw`.
 
 ## Dôležité
 
