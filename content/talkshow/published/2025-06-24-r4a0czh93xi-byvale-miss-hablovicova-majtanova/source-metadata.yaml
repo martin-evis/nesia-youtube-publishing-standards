@@ -1,7 +1,7 @@
 schema_version: "source-metadata-v1"
-repo_version: "v0.5.0-original-descriptions-1-2"
+repo_version: "v0.6.1-sync-descriptions-metadata"
 record_type: "published_talkshow_source_video"
-record_status: "source_description_added"
+record_status: "description_metadata_synced_from_user_supplied_data"
 public_repo_safe: true
 
 video:
@@ -28,8 +28,7 @@ people:
   guests:
     - "Lucia Hablovičová"
     - "Karin Majtánová"
-  additional_contributors:
-    []
+  additional_contributors: []
 
 current_youtube_metadata:
   title: "Bývalé MISS: Krása nie je len to, čo vidíme navonok | NESIA Talkshow: L. Hablovičová & K. Majtánová"
@@ -78,7 +77,7 @@ current_youtube_metadata:
 
 content:
   topic_summary_raw: |
-    Začiatky v modelingu a na súťažiach Miss, rúcavanie predsudkov o kráse, dynamika partnerských vzťahov, sebadôvera a nachádzanie zmyslu života (škôlka, cestovanie).
+    Krása, prijatie, sebavedomie, odvaha kráčať vlastnou cestou, spoločenský tlak, porovnávanie sa, vnútorný pokoj, sebarealizácia a hodnoty, ktoré dávajú životu skutočný zmysel.
   topic_summary_normalized: |
     Krása, predsudky, modeling, Miss, sebadôvera, partnerské vzťahy a hľadanie zmyslu života.
   description_hook: |
@@ -89,10 +88,8 @@ content:
     - "modeling"
     - "predsudky"
     - "sebadôvera"
-    - "vzťahy"
+    - "ženské hodnoty"
     - "zmysel života"
-    - "prijatie seba"
-    - "ženská sila"
 
 performance_public:
   views:
