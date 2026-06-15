@@ -1,7 +1,7 @@
 schema_version: "source-metadata-v1"
-repo_version: "v0.4.0-public-content-architecture"
+repo_version: "v0.5.1-complete-original-descriptions"
 record_type: "published_talkshow_source_video"
-record_status: "draft_from_user_supplied_data"
+record_status: "source_description_added"
 public_repo_safe: true
 
 video:
@@ -27,25 +27,69 @@ people:
   moderator: "Andrea Vadkerti"
   guests:
     - "Matej Šucha"
-  additional_contributors:
-    []
+  additional_contributors: []
 
 current_youtube_metadata:
   title: "Zákaznícka psychológia: Ako nakupujeme krásu (a prečo nejde o cenu) | NESIA Talkshow: Matej Šucha"
-  description_available: false
-  description_status: "nedostupné z API; doplniť manuálne alebo exportom"
-  hashtags: []
-  hashtags_status: "nedostupné z API; doplniť zo Studia alebo ručne"
+  description_available: true
+  description_status: "pôvodný YouTube popis dodaný používateľom a uložený v source-description.md"
+  hashtags:
+    - "#nesia"
+    - "#nesiatalkshow"
+    - "#talkshow"
+    - "#andreavadkerti"
+    - "#behavioralnaekonomia"
+    - "#zakaznickapsychologia"
+    - "#emociavpredaji"
+    - "#designthinking"
+    - "#interierovydizajn"
+    - "#matejsucha"
+  hashtags_status: "extrahované z používateľom dodaného pôvodného YouTube popisu"
   tags: []
   tags_status: "nedostupné z API; doplniť zo Studia alebo ručne"
-  chapters_available: null
-  chapters_status: "neznáme; doplniť manuálne, ak existujú"
+  chapters_available: true
+  chapters_status: "extrahované z používateľom dodaného pôvodného YouTube popisu"
+  chapters:
+    - time: "00:00:09"
+      title: "Úvod NESIA talkshow a psychológia spotrebiteľa"
+    - time: "00:01:48"
+      title: "Predstavenie hosťa Mateja Šuchu"
+    - time: "00:02:02"
+      title: "Výzva pre divákov"
+    - time: "00:02:30"
+      title: "Kniha The Hidden Yes"
+    - time: "00:03:32"
+      title: "Osobná cesta k behaviorálnej ekonómii"
+    - time: "00:06:19"
+      title: "Testovanie predikcií a behaviorálne hacky"
+    - time: "00:17:16"
+      title: "Daniel Kahneman: pilot a autopilot v rozhodovaní"
+    - time: "00:18:48"
+      title: "Predvídateľná iracionalita"
+    - time: "00:19:30"
+      title: "Príklad z praxe a hranice psychológie spotrebiteľa"
+    - time: "00:24:28"
+      title: "Experiment 1: Efekt ukotvenia"
+    - time: "00:31:00"
+      title: "Efekt vlastníctva a vnímanie hodnoty"
+    - time: "00:44:57"
+      title: "Psychologické bariéry v rozhodovaní"
+    - time: "00:51:07"
+      title: "Odmietnutie a osobné zlyhanie"
+    - time: "00:59:48"
+      title: "Univerzálne vzorce v správaní"
+    - time: "01:06:15"
+      title: "Experiment 2: Konfigurácia pizze"
+    - time: "01:11:34"
+      title: "Záver a poďakovanie divákom"
 
 content:
   topic_summary_raw: |
-    Behaviorálna ekonómia a zákaznícka psychológia. Ako podvedomie ovplyvňuje naše nákupné rozhodnutia, dôležitosť kontextu pri predaji, princípy ukotvenia, efekt vlastníctva a odstránenie psychologických bariér zákazníka namiesto tlačenia na pílu.
+    Rozhovor s Matejom Šuchom o zákazníckej psychológii, behaviorálnej ekonómii a rozhodovaní. Vysvetľuje kontext predaja, emócie pri nakupovaní, efekt straty, nedostatok, sociálne vplyvy a praktické experimenty s publikom.
   topic_summary_normalized: |
     Zákaznícka psychológia, behaviorálna ekonómia, ukotvenie ceny, efekt vlastníctva a nákup krásy.
+  description_hook: |
+    Čo sa odohráva v hlave zákazníka v momente rozhodnutia o nákupe?
   themes:
     - "zákaznícka psychológia"
     - "behaviorálna ekonómia"
@@ -53,6 +97,8 @@ content:
     - "ukotvenie ceny"
     - "efekt vlastníctva"
     - "kontext predaja"
+    - "emócia v predaji"
+    - "experimenty s publikom"
 
 performance_public:
   views:
@@ -65,8 +111,5 @@ performance_public:
   public_repo_note: "Do public repo nevkladať interné CTR, retenciu, watch time ani traffic sources."
 
 missing_data:
-  - "pôvodný YouTube popis"
-  - "hashtagy"
   - "tagy / štítky"
-  - "kapitoly"
   - "prepis / transcript"
