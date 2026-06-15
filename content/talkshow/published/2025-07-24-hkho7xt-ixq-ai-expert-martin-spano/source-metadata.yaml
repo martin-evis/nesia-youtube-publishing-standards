@@ -1,7 +1,7 @@
 schema_version: "source-metadata-v1"
-repo_version: "v0.4.0-public-content-architecture"
+repo_version: "v0.6.1-sync-descriptions-metadata"
 record_type: "published_talkshow_source_video"
-record_status: "draft_from_user_supplied_data"
+record_status: "description_metadata_synced_from_user_supplied_data"
 public_repo_safe: true
 
 video:
@@ -27,25 +27,74 @@ people:
   moderator: "Andrea Vadkerti"
   guests:
     - "Martin Spano"
-  additional_contributors:
-    []
+  additional_contributors: []
 
 current_youtube_metadata:
   title: "AI expert: Čo všetko (ne)vieme o umelej inteligencii? | NESIA Talkshow: Martin Spano"
-  description_available: false
-  description_status: "nedostupné z API; doplniť manuálne alebo exportom"
-  hashtags: []
-  hashtags_status: "nedostupné z API; doplniť zo Studia alebo ručne"
+  description_available: true
+  description_status: "pôvodný YouTube popis dodaný používateľom a uložený v source-description.md"
+  hashtags:
+    - "#nesia"
+    - "#nesiatalkshow"
+    - "#talkshow"
+    - "#andreavadkerti"
+    - "#vadkerti"
+    - "#martinspano"
+    - "#spano"
+    - "#umelaintelegencia"
+    - "#ai"
+    - "#technologie"
+    - "#etikaai"
+    - "#buducnost"
+    - "#inspiracia"
+    - "#zmysel"
+    - "#dizajn"
+    - "#nabytoknamieru"
+  hashtags_status: "extrahované z používateľom dodaného pôvodného YouTube popisu"
+  hashtags_review_note: "Hashtag #umelaintelegencia je ponechaný podľa pôvodného popisu; pri novej optimalizácii zvážiť kontrolu preklepu."
   tags: []
   tags_status: "nedostupné z API; doplniť zo Studia alebo ručne"
-  chapters_available: null
-  chapters_status: "neznáme; doplniť manuálne, ak existujú"
+  chapters_available: true
+  chapters_status: "extrahované z používateľom dodaného pôvodného YouTube popisu"
+  chapters:
+    - time: "00:00:07"
+      title: "Úvod talkshow – Andrea Vadkerti otvára tému AI: „Nebavil ma život.”"
+    - time: "00:10:00"
+      title: "ChatGPT ako ideálny partner a jazykové modely, ktoré odporúča Martin Spano"
+    - time: "00:13:00"
+      title: "Princípy ako AI funguje + príklady z každodenného života"
+    - time: "00:14:30"
+      title: "AI a pracovný trh, a odkiaľ čerpá AI informácie"
+    - time: "00:18:30"
+      title: "Ochrana dát: Európa verzus Čína, deepfakes, klonovanie hlasu a absencia filtrov pravosti"
+    - time: "00:24:00"
+      title: "Realita v dobe AI, budúcnosť, adaptácia a zodpovednosť"
+    - time: "00:29:00"
+      title: "AI a interiérový dizajn: nahradí umelá inteligencia dizajnérov?"
+    - time: "00:31:00"
+      title: "Geoffrey Hinton a varovania pred umelou inteligenciou"
+    - time: "00:37:50"
+      title: "Universal basic income – bude raz práca nepovinná?"
+    - time: "00:39:40"
+      title: "Budeme ešte potrebovať vodičák? A kedy si Martin Spano kúpi svoje vysnívané auto – Knight Rider?"
+    - time: "00:43:00"
+      title: "Zbohatol Martin vďaka AI? Generačný odkaz pre mladých"
+    - time: "00:46:00"
+      title: "Ako by sa AI dala využiť v NESIA showroome"
+    - time: "00:48:00"
+      title: "AI appky, ktoré vám nesmú chýbať v zariadeniach"
+    - time: "00:53:00"
+      title: "Halucinácie generatívnych modelov: ako ich rozpoznať a ako sa im vyhnúť"
+    - time: "00:59:00"
+      title: "Záver: Ako učiť deti pracovať s AI? A dá sa s umelou inteligenciou aj pohádať?"
 
 content:
   topic_summary_raw: |
     Umelá inteligencia (AI) a jej vplyv na každodenný život. Debata o vylepšovaní fotografií, závislosti na sociálnych sieťach, digitálnom detoxe pomocou tlačidlového telefónu, deepfakes, budúcnosti vzdelávania a pracovného trhu, univerzálnom základnom príjme a praktických tipoch na promptovanie chatbotov.
   topic_summary_normalized: |
     Umelá inteligencia, sociálne siete, deepfakes, digitálny detox, budúcnosť práce a praktické promptovanie.
+  description_hook: |
+    Umelá inteligencia už dávno nie je len témou sci-fi filmov – dnes je neoddeliteľnou súčasťou nášho každodenného života.
   themes:
     - "AI"
     - "umelá inteligencia"
@@ -54,6 +103,7 @@ content:
     - "digitálny detox"
     - "budúcnosť práce"
     - "promptovanie"
+    - "kritické myslenie"
 
 performance_public:
   views:
@@ -66,8 +116,5 @@ performance_public:
   public_repo_note: "Do public repo nevkladať interné CTR, retenciu, watch time ani traffic sources."
 
 missing_data:
-  - "pôvodný YouTube popis"
-  - "hashtagy"
   - "tagy / štítky"
-  - "kapitoly"
   - "prepis / transcript"
