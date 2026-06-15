@@ -1,7 +1,7 @@
 schema_version: "source-metadata-v1"
-repo_version: "v0.4.0-public-content-architecture"
+repo_version: "v0.6.1-sync-descriptions-metadata"
 record_type: "published_talkshow_source_video"
-record_status: "draft_from_user_supplied_data"
+record_status: "description_metadata_synced_from_user_supplied_data"
 public_repo_safe: true
 
 video:
@@ -21,39 +21,84 @@ publication:
 
 format:
   video_type: "talkshow"
-  format_variant: "full_episode"
+  format_variant: "full_episode_with_music_segment"
 
 people:
   moderator: "Andrea Vadkerti"
   guests:
     - "Gabriela Končitíková"
   additional_contributors:
-    []
+    - "Robo Opatovský"
 
 current_youtube_metadata:
   title: "Riaditeľka Nadácie Tomáša Baťu | NESIA TALKSHOW : Čo by robil Tomáš Baťa dnes: Gabriela Končitíková"
   description_available: true
-  description_status: "dostupné z údajov dodaných používateľom"
-  hashtags: []
-  hashtags_status: "nedostupné z API; doplniť zo Studia alebo ručne"
+  description_status: "pôvodný YouTube popis dodaný používateľom a uložený v source-description.md"
+  hashtags:
+    - "#nesia"
+    - "#nesiatalkshow"
+    - "#talkshow"
+    - "#andreavadkerti"
+    - "#tomasbata"
+    - "#batovinstitut"
+    - "#podnikanieakosluzba"
+    - "#interierovydizajn"
+    - "#matejsucha"
+    - "#koncitikova"
+    - "#gabrielakoncitikova"
+  hashtags_status: "extrahované z používateľom dodaného pôvodného YouTube popisu"
+  hashtags_review_note: "Hashtag #matejsucha je ponechaný podľa pôvodného popisu; pri novej optimalizácii skontrolovať, či nejde o omyl."
   tags: []
   tags_status: "nedostupné z API; doplniť zo Studia alebo ručne"
-  chapters_available: null
-  chapters_status: "neznáme; doplniť manuálne, ak existujú"
+  chapters_available: true
+  chapters_status: "extrahované z používateľom dodaného pôvodného YouTube popisu"
+  chapters:
+    - time: "00:00:09"
+      title: "Otvorenie témy dedičstva Tomáša Baťu a privítanie hosťky"
+    - time: "00:02:10"
+      title: "Ako to celé začalo? Prvý kontakt Gabriely Končitíkovej s Baťovými myšlienkami"
+    - time: "00:03:19"
+      title: "Inšpirácia absolventmi Baťovej školy práce"
+    - time: "00:05:15"
+      title: "Nadácia Tomáša Baťu a korene jeho filozofie"
+    - time: "00:09:00"
+      title: "Baťovský ekosystém – človek ako základ biznisu"
+    - time: "00:12:05"
+      title: "Sebahodnota, AI a nenahraditeľnosť človeka"
+    - time: "00:23:12"
+      title: "Hudobný vstup – Robo Opatovský"
+    - time: "00:31:30"
+      title: "Harmonický život – telo, duša, myseľ, vzťahy"
+    - time: "00:37:27"
+      title: "Úloha Márie Baťovej – sila ženy na pozadí lídra"
+    - time: "00:50:25"
+      title: "Druhý hudobný vstup – Robo Opatovský"
+    - time: "00:59:31"
+      title: "Ultimátny cieľ podnikania"
+    - time: "01:01:53"
+      title: "Morálna záveť Tomáša Baťu"
+    - time: "01:09:42"
+      title: "Ako by Baťa vnímal dnešný svet"
+    - time: "01:13:14"
+      title: "Poďakovanie hosťke a záver"
+    - time: "01:14:00"
+      title: "Záverečný hudobný vstup – Robo Opatovský"
 
 content:
   topic_summary_raw: |
-    Baťov systém riadenia a Baťovský leadership v súčasnosti. O tom, ako Tomáš Baťa nevyrábal len topánky, ale predovšetkým budoval ľudí. Rozhovor prepája témy výkonu a hodnôt, zisku a zmysluplnej služby človeku ako najvyššej formy líderstva.
+    Baťov systém riadenia, Baťovský leadership a otázka, ako by Tomáš Baťa pozeral na dnešný svet, podnikanie, charakter, prácu, morálku, vzťahy a budúcnosť človeka v ére technológií.
   topic_summary_normalized: |
     Baťov leadership, podnikanie ako služba, hodnoty, výkon, zmysel a ľudskosť v súčasnom biznise.
+  description_hook: |
+    Známy československý podnikateľ a vizionár Tomáš Baťa predbehol svoju dobu o celé desaťročia.
   themes:
     - "Tomáš Baťa"
     - "Baťov leadership"
-    - "podnikanie"
+    - "podnikanie ako služba"
     - "hodnoty"
-    - "výkon"
-    - "služba človeku"
+    - "morálka"
     - "zmysel práce"
+    - "hudobný vstup"
 
 performance_public:
   views:
@@ -66,7 +111,7 @@ performance_public:
   public_repo_note: "Do public repo nevkladať interné CTR, retenciu, watch time ani traffic sources."
 
 missing_data:
-  - "hashtagy"
   - "tagy / štítky"
-  - "kapitoly"
   - "prepis / transcript"
+  - "presný deň publikovania"
+  - "skontrolovať hashtag #matejsucha"
