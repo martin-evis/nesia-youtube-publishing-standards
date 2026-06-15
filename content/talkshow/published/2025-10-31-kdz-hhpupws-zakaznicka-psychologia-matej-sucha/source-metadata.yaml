@@ -1,0 +1,72 @@
+schema_version: "source-metadata-v1"
+repo_version: "v0.4.0-public-content-architecture"
+record_type: "published_talkshow_source_video"
+record_status: "draft_from_user_supplied_data"
+public_repo_safe: true
+
+video:
+  number: 3
+  id: "KdZ-HHPUpWs"
+  url: "https://youtu.be/KdZ-HHPUpWs"
+  playlist_url: "https://www.youtube.com/playlist?list=PLUXZ_uBD6mO7SBnGWdxhZYnBHK6nHkrRL"
+  playlist_status: "playlist supplied by user; API confirmation not available"
+  thumbnail_url: "https://i.ytimg.com/vi/KdZ-HHPUpWs/maxresdefault.jpg"
+  thumbnail_note: "štandardný maxres náhľad"
+
+publication:
+  published_date_text: "2025-10-31"
+  published_date: "2025-10-31"
+  published_date_precision: "day"
+  verification_status: "user_supplied"
+
+format:
+  video_type: "talkshow"
+  format_variant: "full_episode_with_audience_interaction"
+
+people:
+  moderator: "Andrea Vadkerti"
+  guests:
+    - "Matej Šucha"
+  additional_contributors:
+    []
+
+current_youtube_metadata:
+  title: "Zákaznícka psychológia: Ako nakupujeme krásu (a prečo nejde o cenu) | NESIA Talkshow: Matej Šucha"
+  description_available: false
+  description_status: "nedostupné z API; doplniť manuálne alebo exportom"
+  hashtags: []
+  hashtags_status: "nedostupné z API; doplniť zo Studia alebo ručne"
+  tags: []
+  tags_status: "nedostupné z API; doplniť zo Studia alebo ručne"
+  chapters_available: null
+  chapters_status: "neznáme; doplniť manuálne, ak existujú"
+
+content:
+  topic_summary_raw: |
+    Behaviorálna ekonómia a zákaznícka psychológia. Ako podvedomie ovplyvňuje naše nákupné rozhodnutia, dôležitosť kontextu pri predaji, princípy ukotvenia, efekt vlastníctva a odstránenie psychologických bariér zákazníka namiesto tlačenia na pílu.
+  topic_summary_normalized: |
+    Zákaznícka psychológia, behaviorálna ekonómia, ukotvenie ceny, efekt vlastníctva a nákup krásy.
+  themes:
+    - "zákaznícka psychológia"
+    - "behaviorálna ekonómia"
+    - "nákupné rozhodovanie"
+    - "ukotvenie ceny"
+    - "efekt vlastníctva"
+    - "kontext predaja"
+
+performance_public:
+  views:
+    value: 18962
+    relation: "exact_from_user_snapshot"
+  likes:
+    value: null
+    relation: "unknown"
+  source: "user supplied snapshot"
+  public_repo_note: "Do public repo nevkladať interné CTR, retenciu, watch time ani traffic sources."
+
+missing_data:
+  - "pôvodný YouTube popis"
+  - "hashtagy"
+  - "tagy / štítky"
+  - "kapitoly"
+  - "prepis / transcript"

@@ -1,0 +1,36 @@
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Private / sensitive project material
+private/
+youtube-studio-exports/
+raw-exports/
+analytics-exports/
+*.xlsx
+*.xls
+*.csv
+
+# Large media files - keep outside GitHub
+*.mp4
+*.mov
+*.mkv
+*.avi
+*.wav
+*.aiff
+*.mp3
+*.zip
+*.tar
+*.gz
+
+# Local generated files
+/tmp/
+*.log

@@ -1,0 +1,72 @@
+schema_version: "source-metadata-v1"
+repo_version: "v0.4.0-public-content-architecture"
+record_type: "published_talkshow_source_video"
+record_status: "draft_from_user_supplied_data"
+public_repo_safe: true
+
+video:
+  number: 4
+  id: "wnlNvGYrnhw"
+  url: "https://youtu.be/wnlNvGYrnhw"
+  playlist_url: "https://www.youtube.com/playlist?list=PLUXZ_uBD6mO7SBnGWdxhZYnBHK6nHkrRL"
+  playlist_status: "playlist supplied by user; API confirmation not available"
+  thumbnail_url: "https://i.ytimg.com/vi/wnlNvGYrnhw/maxresdefault.jpg"
+  thumbnail_note: "štandardný maxres náhľad"
+
+publication:
+  published_date_text: "Január 2026"
+  published_date: "2026-01"
+  published_date_precision: "month"
+  verification_status: "needs_exact_day"
+
+format:
+  video_type: "talkshow"
+  format_variant: "full_episode"
+
+people:
+  moderator: "Andrea Vadkerti"
+  guests:
+    - "Gabriela Končitíková"
+  additional_contributors:
+    []
+
+current_youtube_metadata:
+  title: "Riaditeľka Nadácie Tomáša Baťu | NESIA TALKSHOW : Čo by robil Tomáš Baťa dnes: Gabriela Končitíková"
+  description_available: true
+  description_status: "dostupné z údajov dodaných používateľom"
+  hashtags: []
+  hashtags_status: "nedostupné z API; doplniť zo Studia alebo ručne"
+  tags: []
+  tags_status: "nedostupné z API; doplniť zo Studia alebo ručne"
+  chapters_available: null
+  chapters_status: "neznáme; doplniť manuálne, ak existujú"
+
+content:
+  topic_summary_raw: |
+    Baťov systém riadenia a Baťovský leadership v súčasnosti. O tom, ako Tomáš Baťa nevyrábal len topánky, ale predovšetkým budoval ľudí. Rozhovor prepája témy výkonu a hodnôt, zisku a zmysluplnej služby človeku ako najvyššej formy líderstva.
+  topic_summary_normalized: |
+    Baťov leadership, podnikanie ako služba, hodnoty, výkon, zmysel a ľudskosť v súčasnom biznise.
+  themes:
+    - "Tomáš Baťa"
+    - "Baťov leadership"
+    - "podnikanie"
+    - "hodnoty"
+    - "výkon"
+    - "služba človeku"
+    - "zmysel práce"
+
+performance_public:
+  views:
+    value: 21000
+    relation: "greater_than_from_user_snapshot"
+  likes:
+    value: null
+    relation: "unknown"
+  source: "user supplied snapshot"
+  public_repo_note: "Do public repo nevkladať interné CTR, retenciu, watch time ani traffic sources."
+
+missing_data:
+  - "hashtagy"
+  - "tagy / štítky"
+  - "kapitoly"
+  - "prepis / transcript"

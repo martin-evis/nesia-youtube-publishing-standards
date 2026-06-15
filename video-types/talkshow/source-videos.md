@@ -1,7 +1,5 @@
 # Zdrojové TALKSHOW videá
 
-Tieto verejné videá sú vstupom pre prvú verziu štandardu NESIA TALKSHOW.
-
 ## Playlist
 
 | Typ | URL | Poznámka |
@@ -10,28 +8,15 @@ Tieto verejné videá sú vstupom pre prvú verziu štandardu NESIA TALKSHOW.
 
 ## Videá
 
-| # | Video ID | URL | Stav metadát |
-|---:|---|---|---|
-| 1 | R4A0CzH93XI | https://youtu.be/R4A0CzH93XI | DOPLNIŤ: aktuálny nadpis, popis, hashtagy, tagy, thumbnail |
-| 2 | hKhO7xT_IxQ | https://youtu.be/hKhO7xT_IxQ | DOPLNIŤ: aktuálny nadpis, popis, hashtagy, tagy, thumbnail |
-| 3 | KdZ-HHPUpWs | https://youtu.be/KdZ-HHPUpWs | DOPLNIŤ: aktuálny nadpis, popis, hashtagy, tagy, thumbnail |
-| 4 | wnlNvGYrnhw | https://youtu.be/wnlNvGYrnhw | DOPLNIŤ: aktuálny nadpis, popis, hashtagy, tagy, thumbnail |
-| 5 | 7MfOiVWXNJg | https://youtu.be/7MfOiVWXNJg | DOPLNIŤ: aktuálny nadpis, popis, hashtagy, tagy, thumbnail |
-| 6 | LU2foQMJVsg | https://youtu.be/LU2foQMJVsg | DOPLNIŤ: aktuálny nadpis, popis, hashtagy, tagy, thumbnail |
+| # | Video ID | URL | Dátum publikovania | Variant | Hosť / hostia | Stav metadát | Detail v repo |
+|---:|---|---|---|---|---|---|---|
+| 1 | R4A0CzH93XI | https://youtu.be/R4A0CzH93XI | 2025-06-24 | full_episode | Lucia Hablovičová, Karin Majtánová | základné metadáta; popis chýba; tagy/hashtagy/kapitoly/prepis chýbajú | `content/talkshow/published/2025-06-24-r4a0czh93xi-byvale-miss-hablovicova-majtanova/` |
+| 2 | hKhO7xT_IxQ | https://youtu.be/hKhO7xT_IxQ | 2025-07-24 | full_episode | Martin Spano | základné metadáta; popis chýba; tagy/hashtagy/kapitoly/prepis chýbajú | `content/talkshow/published/2025-07-24-hkho7xt-ixq-ai-expert-martin-spano/` |
+| 3 | KdZ-HHPUpWs | https://youtu.be/KdZ-HHPUpWs | 2025-10-31 | full_episode | Matej Šucha | základné metadáta; popis chýba; tagy/hashtagy/kapitoly/prepis chýbajú | `content/talkshow/published/2025-10-31-kdz-hhpupws-zakaznicka-psychologia-matej-sucha/` |
+| 4 | wnlNvGYrnhw | https://youtu.be/wnlNvGYrnhw | Január 2026 | full_episode | Gabriela Končitíková | základné metadáta; popis dodaný; tagy/hashtagy/kapitoly/prepis chýbajú | `content/talkshow/published/2026-01-wnlnvgyrnhw-bata-gabriela-koncitikova/` |
+| 5 | 7MfOiVWXNJg | https://youtu.be/7MfOiVWXNJg | 2026-02-22 | best_of_compilation | Martin Spano, Gabriela Končitíková, Matej Šucha, Karin Majtánová, Lucia Hablovičová, ďalší hostia z predchádzajúcich epizód | základné metadáta; popis chýba; tagy/hashtagy/kapitoly/prepis chýbajú | `content/talkshow/published/2026-02-22-7mfoivwxnjg-best-of-nesia-talkshow-2025/` |
+| 6 | LU2foQMJVsg | https://www.youtube.com/watch?v=LU2foQMJVsg | 2026-06-14 | full_episode_with_music_segment | Zuzana Šebová | základné metadáta; popis chýba; tagy/hashtagy/kapitoly/prepis chýbajú | `content/talkshow/published/2026-06-14-lu2foqmjvsg-zuzana-sebova/` |
 
-## Doplňujúce stĺpce pre budúcu analýzu
+## Stav po aktualizácii v0.3.0
 
-Pri dopĺňaní aktuálnych dát pridaj pre každé video:
-
-- finálny nadpis,
-- dĺžka videa,
-- dátum publikovania,
-- hosť,
-- hlavná téma,
-- popis,
-- hashtagy,
-- tagy,
-- playlist,
-- thumbnail štýl,
-- počet zhliadnutí po 7 / 30 / 90 dňoch, ak je dostupné,
-- poznámka, čo fungovalo a čo zlepšiť.
+Doplnené sú všetky 6 vstupné videá. Dataset je vhodný na predbežné pravidlá pre TALKSHOW, ale ešte nie na finálne uzavretie voice of tone, pretože chýbajú prepisy a väčšina pôvodných popisov.
