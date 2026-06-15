@@ -1,0 +1,73 @@
+schema_version: "source-metadata-v1"
+repo_version: "v0.4.0-public-content-architecture"
+record_type: "published_talkshow_source_video"
+record_status: "draft_from_user_supplied_data"
+public_repo_safe: true
+
+video:
+  number: 2
+  id: "hKhO7xT_IxQ"
+  url: "https://youtu.be/hKhO7xT_IxQ"
+  playlist_url: "https://www.youtube.com/playlist?list=PLUXZ_uBD6mO7SBnGWdxhZYnBHK6nHkrRL"
+  playlist_status: "playlist supplied by user; API confirmation not available"
+  thumbnail_url: "https://i.ytimg.com/vi/hKhO7xT_IxQ/maxresdefault.jpg"
+  thumbnail_note: "štandardný maxres náhľad"
+
+publication:
+  published_date_text: "2025-07-24"
+  published_date: "2025-07-24"
+  published_date_precision: "day"
+  verification_status: "user_supplied"
+
+format:
+  video_type: "talkshow"
+  format_variant: "full_episode"
+
+people:
+  moderator: "Andrea Vadkerti"
+  guests:
+    - "Martin Spano"
+  additional_contributors:
+    []
+
+current_youtube_metadata:
+  title: "AI expert: Čo všetko (ne)vieme o umelej inteligencii? | NESIA Talkshow: Martin Spano"
+  description_available: false
+  description_status: "nedostupné z API; doplniť manuálne alebo exportom"
+  hashtags: []
+  hashtags_status: "nedostupné z API; doplniť zo Studia alebo ručne"
+  tags: []
+  tags_status: "nedostupné z API; doplniť zo Studia alebo ručne"
+  chapters_available: null
+  chapters_status: "neznáme; doplniť manuálne, ak existujú"
+
+content:
+  topic_summary_raw: |
+    Umelá inteligencia (AI) a jej vplyv na každodenný život. Debata o vylepšovaní fotografií, závislosti na sociálnych sieťach, digitálnom detoxe pomocou tlačidlového telefónu, deepfakes, budúcnosti vzdelávania a pracovného trhu, univerzálnom základnom príjme a praktických tipoch na promptovanie chatbotov.
+  topic_summary_normalized: |
+    Umelá inteligencia, sociálne siete, deepfakes, digitálny detox, budúcnosť práce a praktické promptovanie.
+  themes:
+    - "AI"
+    - "umelá inteligencia"
+    - "deepfakes"
+    - "sociálne siete"
+    - "digitálny detox"
+    - "budúcnosť práce"
+    - "promptovanie"
+
+performance_public:
+  views:
+    value: 23806
+    relation: "exact_from_user_snapshot"
+  likes:
+    value: 16
+    relation: "exact_from_user_snapshot"
+  source: "user supplied snapshot"
+  public_repo_note: "Do public repo nevkladať interné CTR, retenciu, watch time ani traffic sources."
+
+missing_data:
+  - "pôvodný YouTube popis"
+  - "hashtagy"
+  - "tagy / štítky"
+  - "kapitoly"
+  - "prepis / transcript"

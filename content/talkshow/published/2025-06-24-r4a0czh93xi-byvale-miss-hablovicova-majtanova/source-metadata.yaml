@@ -1,0 +1,74 @@
+schema_version: "source-metadata-v1"
+repo_version: "v0.4.0-public-content-architecture"
+record_type: "published_talkshow_source_video"
+record_status: "draft_from_user_supplied_data"
+public_repo_safe: true
+
+video:
+  number: 1
+  id: "R4A0CzH93XI"
+  url: "https://youtu.be/R4A0CzH93XI"
+  playlist_url: "https://www.youtube.com/playlist?list=PLUXZ_uBD6mO7SBnGWdxhZYnBHK6nHkrRL"
+  playlist_status: "playlist supplied by user; API confirmation not available"
+  thumbnail_url: "https://i.ytimg.com/vi/R4A0CzH93XI/maxresdefault.jpg"
+  thumbnail_note: "štandardný maxres náhľad"
+
+publication:
+  published_date_text: "2025-06-24"
+  published_date: "2025-06-24"
+  published_date_precision: "day"
+  verification_status: "user_supplied"
+
+format:
+  video_type: "talkshow"
+  format_variant: "full_episode"
+
+people:
+  moderator: "Andrea Vadkerti"
+  guests:
+    - "Lucia Hablovičová"
+    - "Karin Majtánová"
+  additional_contributors:
+    []
+
+current_youtube_metadata:
+  title: "Bývalé MISS: Krása nie je len to, čo vidíme navonok | NESIA Talkshow: L. Hablovičová & K. Majtánová"
+  description_available: false
+  description_status: "nedostupné z technického rozhrania; doplniť manuálne alebo exportom"
+  hashtags: []
+  hashtags_status: "nedostupné z API; doplniť zo Studia alebo ručne"
+  tags: []
+  tags_status: "nedostupné z API; doplniť zo Studia alebo ručne"
+  chapters_available: null
+  chapters_status: "neznáme; doplniť manuálne, ak existujú"
+
+content:
+  topic_summary_raw: |
+    Začiatky v modelingu a na súťažiach Miss, rúcavanie predsudkov o kráse, dynamika partnerských vzťahov, sebadôvera a nachádzanie zmyslu života (škôlka, cestovanie).
+  topic_summary_normalized: |
+    Krása, predsudky, modeling, Miss, sebadôvera, partnerské vzťahy a hľadanie zmyslu života.
+  themes:
+    - "krása"
+    - "Miss"
+    - "modeling"
+    - "predsudky"
+    - "sebadôvera"
+    - "vzťahy"
+    - "zmysel života"
+
+performance_public:
+  views:
+    value: 20685
+    relation: "exact_from_user_snapshot"
+  likes:
+    value: 58
+    relation: "exact_from_user_snapshot"
+  source: "user supplied snapshot"
+  public_repo_note: "Do public repo nevkladať interné CTR, retenciu, watch time ani traffic sources."
+
+missing_data:
+  - "pôvodný YouTube popis"
+  - "hashtagy"
+  - "tagy / štítky"
+  - "kapitoly"
+  - "prepis / transcript"

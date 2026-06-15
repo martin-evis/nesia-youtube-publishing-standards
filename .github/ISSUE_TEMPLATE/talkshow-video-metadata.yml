@@ -1,0 +1,54 @@
+name: NESIA TALKSHOW metadata package
+description: Príprava nadpisu, popisu a metadát pre nové TALKSHOW video
+title: "TALKSHOW: [hosť / téma]"
+labels: ["youtube", "talkshow", "metadata"]
+body:
+  - type: input
+    id: guest
+    attributes:
+      label: Hosť
+      description: Meno hosťa
+      placeholder: "Meno Priezvisko"
+    validations:
+      required: true
+  - type: input
+    id: topic
+    attributes:
+      label: Hlavná téma
+      placeholder: "Napr. zákulisie návrhu interiéru"
+    validations:
+      required: true
+  - type: textarea
+    id: notes
+    attributes:
+      label: Poznámky / prepis
+      description: Vlož prepis, osnovu alebo najdôležitejšie body z videa.
+    validations:
+      required: true
+  - type: textarea
+    id: links
+    attributes:
+      label: Odkazy do popisu
+      description: Web, playlist, sociálne siete, showroom, iné odkazy.
+    validations:
+      required: false
+  - type: dropdown
+    id: video_type
+    attributes:
+      label: Typ výstupu
+      options:
+        - Celá TALKSHOW epizóda
+        - Highlight / krátky zostrih
+        - Shorts odvodený z TALKSHOW
+    validations:
+      required: true
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: Kontrola vstupov
+      options:
+        - label: Meno hosťa je overené
+        - label: Pozícia / firma hosťa je overená
+        - label: Existuje prepis alebo poznámky
+        - label: Je jasné primárne CTA
+        - label: Video má patriť do TALKSHOW playlistu

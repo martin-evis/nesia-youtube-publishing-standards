@@ -1,0 +1,74 @@
+schema_version: "source-metadata-v1"
+repo_version: "v0.4.0-public-content-architecture"
+record_type: "published_talkshow_source_video"
+record_status: "draft_from_user_supplied_data"
+public_repo_safe: true
+
+video:
+  number: 6
+  id: "LU2foQMJVsg"
+  url: "https://www.youtube.com/watch?v=LU2foQMJVsg"
+  playlist_url: "https://www.youtube.com/playlist?list=PLUXZ_uBD6mO7SBnGWdxhZYnBHK6nHkrRL"
+  playlist_status: "playlist supplied by user; API confirmation not available"
+  thumbnail_url: "https://i.ytimg.com/vi/LU2foQMJVsg/maxresdefault.jpg"
+  thumbnail_note: "štandardný maxres náhľad"
+
+publication:
+  published_date_text: "2026-06-14 (pozn. YouTube API vráti aktuálny dátum pre čerstvo zverejnené videá)"
+  published_date: "2026-06-14"
+  published_date_precision: "day"
+  verification_status: "needs_followup_after_fresh_publish"
+
+format:
+  video_type: "talkshow"
+  format_variant: "full_episode_with_music_segment"
+
+people:
+  moderator: "Andrea Vadkerti"
+  guests:
+    - "Zuzana Šebová"
+  additional_contributors:
+    - "duo Morena"
+    - "Aťa"
+
+current_youtube_metadata:
+  title: "Nedá sa vyhovieť každému. Zuzana Šebová o materstve, hejtoch a humore | NESIA TALKSHOW"
+  description_available: false
+  description_status: "nedostupné z API; doplniť manuálne alebo exportom"
+  hashtags: []
+  hashtags_status: "nedostupné z API; doplniť zo Studia alebo ručne"
+  tags: []
+  tags_status: "nedostupné z API; doplniť zo Studia alebo ručne"
+  chapters_available: null
+  chapters_status: "neznáme; doplniť manuálne, ak existujú"
+
+content:
+  topic_summary_raw: |
+    Zuzana Šebová v úprimnom rozhovore odkrýva svoju nehereckú tvár. Hovorí o materstve, nevyžiadaných radách, hejtoch, predsudkoch ohľadom materstva i výzoru, manželskom živote s Mišom Kubovčíkom, humore, vyrovnanosti a zdravom sebavedomí.
+  topic_summary_normalized: |
+    Materstvo, hejty, humor, ženské sebavedomie, verejný obraz a schopnosť neriešiť mienku okolia.
+  themes:
+    - "Zuzana Šebová"
+    - "materstvo"
+    - "hejty"
+    - "humor"
+    - "sebavedomie"
+    - "ženské témy"
+    - "hudobný vstup"
+
+performance_public:
+  views:
+    value: null
+    relation: "unknown"
+  likes:
+    value: null
+    relation: "unknown"
+  source: "user supplied snapshot"
+  public_repo_note: "Do public repo nevkladať interné CTR, retenciu, watch time ani traffic sources."
+
+missing_data:
+  - "pôvodný YouTube popis"
+  - "hashtagy"
+  - "tagy / štítky"
+  - "kapitoly"
+  - "prepis / transcript"

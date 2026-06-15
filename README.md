@@ -1,145 +1,127 @@
 # NESIA YouTube Publishing Standards
 
-Interný repozitár pre štandardizáciu publikovania videí na YouTube kanáli NESIA.
+Repo pre štandardizáciu YouTube publikovania pre NESIA. Aktuálny hlavný formát je **TALKSHOW**.
 
-Prvá verzia je zameraná na formát **TALKSHOW**. Repozitár je pripravený tak, aby sa neskôr dali doplniť ďalšie typy videí, napríklad produktové videá, showroom videá, reklamné videá, reels/shorts alebo zostrihy.
+> Stav tejto verzie: `v0.4.0-public-content-architecture`  
+> Dátum aktualizácie: 2026-06-14  
+> GitHub účet: `martin-evis`  
+> Oblasť: YouTube / obsah / štandardizácia
 
-## Stav repozitára
+## Čo je cieľ repozitára
 
-- **Verzia:** `v0.1.0-talkshow`
-- **Dátum založenia:** 2026-06-14
-- **GitHub účet:** `martin-evis`
-- **Projektová oblasť:** YouTube / obsah / štandardizácia
-- **Aktuálny video typ:** TALKSHOW
-- **Primárny jazyk výstupov:** slovenčina
+Repo má byť praktický pracovný štandard pre nové NESIA videá. Pri novom videu má pomôcť pripraviť:
 
-## Cieľ
-
-Pre každé nové NESIA TALKSHOW video pripraviť jednotný publikačný balík:
-
-1. nadpis videa,
-2. popis videa,
-3. krátky úvodný hook,
+1. 3–5 variantov nadpisu,
+2. odporúčaný finálny nadpis,
+3. krátky aj dlhý popis,
 4. kapitoly / časové značky,
 5. hashtagy,
-6. interné tagy / štítky,
-7. odporúčaný playlist,
-8. návrh thumbnailu,
-9. návrh pripnutého komentára,
-10. kontrolný checklist pred a po publikovaní.
+6. tagy / štítky,
+7. playlist,
+8. thumbnail text a brief pre grafika,
+9. pripnutý komentár,
+10. interný kontrolný checklist pred publikovaním.
 
-## Zdrojové videá pre prvú TALKSHOW verziu
+## Zásadné pravidlo
 
-Playlist:
+GitHub nie je archív videí. Do repozitára patria **texty, metadáta, pravidlá, šablóny, prompty, analýzy a výstupné balíky**.
 
-- https://www.youtube.com/playlist?list=PLUXZ_uBD6mO7SBnGWdxhZYnBHK6nHkrRL
+Do repozitára nepatria veľké video súbory (`mp4`, `mov`, `mkv`) ani nečistené exporty z YouTube Studio. Pri verejnom repozitári sem nepatria ani interné dáta ako retencia, CTR, watch time, zdroje návštevnosti, rozpočty alebo neverejné kontakty.
 
-Vstupné verejné videá:
+## Aktuálny rozsah
 
-- https://youtu.be/R4A0CzH93XI
-- https://youtu.be/hKhO7xT_IxQ
-- https://youtu.be/KdZ-HHPUpWs
-- https://youtu.be/wnlNvGYrnhw
-- https://youtu.be/7MfOiVWXNJg
-- https://youtu.be/LU2foQMJVsg
+Aktuálna verzia obsahuje 6 zdrojových TALKSHOW videí:
 
-Poznámka: V tejto verzii sú videá evidované ako verejné zdroje, ale konkrétne nadpisy, popisy, dĺžky, kapitoly a aktuálne tagy ešte treba doplniť manuálne alebo exportom z YouTube Studio. Štruktúra repozitára je pripravená tak, aby sa tieto dáta dali neskôr doplniť bez zmeny workflow.
+| # | Video | Typ | Stav |
+|---:|---|---|---|
+| 1 | `R4A0CzH93XI` | full episode | základné metadáta doplnené |
+| 2 | `hKhO7xT_IxQ` | full episode | základné metadáta doplnené |
+| 3 | `KdZ-HHPUpWs` | full episode + audience interaction | základné metadáta doplnené |
+| 4 | `wnlNvGYrnhw` | full episode | má pôvodný popis, chýba presný deň publikovania |
+| 5 | `7MfOiVWXNJg` | best-of compilation | samostatný variant, nepoužívať ako bežnú epizódu |
+| 6 | `LU2foQMJVsg` | full episode + music segment | čerstvé video, výkon treba doplniť neskôr |
 
-## Štruktúra repozitára
+Detailné dáta sú v:
+
+```text
+content/talkshow/published/
+```
+
+## Nová odporúčaná štruktúra
 
 ```text
 .
 ├── README.md
 ├── AGENTS.md
 ├── CHANGELOG.md
-├── LICENSE.md
 ├── docs/
-│   ├── 01-repository-workflow.md
-│   ├── 02-youtube-official-rules.md
-│   ├── 03-ai-use-rules.md
-│   └── 04-future-video-types.md
-├── video-types/
+│   ├── 00-public-repo-mode.md
+│   ├── 06-content-data-model.md
+│   ├── 07-storage-policy.md
+│   └── 08-iteration-workflow.md
+├── content/
 │   └── talkshow/
 │       ├── README.md
-│       ├── workflow.md
-│       ├── title-description-rules.md
-│       ├── tags-hashtags-metadata.md
-│       ├── thumbnail-rules.md
-│       ├── source-videos.md
-│       ├── examples/
-│       │   ├── published-videos-analysis.md
-│       │   └── sample-output-package.md
-│       ├── templates/
-│       │   └── youtube-talkshow-template.md
-│       └── prompts/
-│           └── generate-talkshow-metadata.md
-├── checklists/
-│   ├── pre-publication-checklist.md
-│   └── post-publication-checklist.md
-├── metadata-packages/
+│       ├── missing-data-tracker.md
+│       ├── drafts/
+│       └── published/
+│           ├── index.md
+│           └── YYYY-MM-DD-videoid-slug/
+│               ├── source-metadata.yaml
+│               ├── raw-input.md
+│               ├── source-description.md
+│               ├── source-transcript.md
+│               ├── analysis.md
+│               └── performance-notes.md
+├── rules/
 │   └── talkshow/
-│       └── 000-template.md
-├── scripts/
-│   └── validate_youtube_metadata.py
-└── .github/
-    └── ISSUE_TEMPLATE/
-        └── talkshow-video-metadata.yml
+│       ├── voice-of-tone-draft-v0.4.md
+│       ├── title-rules-draft-v0.4.md
+│       ├── description-rules-draft-v0.4.md
+│       └── metadata-rules-draft-v0.4.md
+├── templates/
+│   └── talkshow/
+├── prompts/
+│   └── talkshow/
+├── outputs/
+│   └── talkshow/
+└── scripts/
+    └── validate_talkshow_source_records.py
 ```
 
-## Rýchly workflow pre nové TALKSHOW video
+Starší priečinok `video-types/talkshow/` môže zostať ako dokumentačná vrstva k formátu. Zdrojové dáta o publikovaných videách však majú byť primárne v `content/talkshow/published/`.
 
-1. Skopíruj `metadata-packages/talkshow/000-template.md`.
-2. Premenuj súbor podľa epizódy, napríklad `metadata-packages/talkshow/007-meno-hosta-tema.md`.
-3. Doplň vstupy: URL pracovného videa, hosť, hlavná téma, prepis alebo poznámky, CTA, odkazy.
-4. Použi prompt z `video-types/talkshow/prompts/generate-talkshow-metadata.md`.
-5. Výstup skontroluj podľa `checklists/pre-publication-checklist.md`.
-6. Po zverejnení doplň URL finálneho videa a prejdi `checklists/post-publication-checklist.md`.
+## Pracovný postup pre dopĺňanie existujúcich videí
 
-## Odporúčané GitHub nastavenie
+1. Otvor konkrétny priečinok videa v `content/talkshow/published/`.
+2. Pôvodný YouTube popis doplň do `source-description.md`.
+3. Prepis videa doplň do `source-transcript.md`.
+4. Ak doplníš hashtagy, tagy alebo kapitoly, aktualizuj `source-metadata.yaml`.
+5. Aktualizuj `content/talkshow/missing-data-tracker.md`.
+6. Pri významnej zmene dopíš krátky záznam do `CHANGELOG.md`.
 
-Repo odporúčam vytvoriť ako **private**, keďže ide o interný štandard práce. Verejné sú iba zdrojové YouTube videá, nie nevyhnutne interné workflow, šablóny, poznámky a checklisty.
+## Pracovný postup pre nové TALKSHOW video
 
-Odporúčaný názov repozitára:
+1. Vytvor nový priečinok v `content/talkshow/drafts/`.
+2. Použi `templates/talkshow/new-video-brief-template.md`.
+3. Doplň transcript alebo čo najlepší pracovný brief.
+4. Použi prompt `prompts/talkshow/create-youtube-pack-from-transcript.md`.
+5. Výstup ulož do `outputs/talkshow/`.
+6. Pred publikovaním prebehni checklist v `checklists/pre-publication-checklist.md`.
+7. Po publikovaní presuň záznam medzi `published` a doplň finálnu URL.
 
-```text
-nesia-youtube-publishing-standards
-```
+## Najbližšie kroky
 
-Odporúčaný popis repozitára:
+- doplniť pôvodné popisy videí 1, 2, 3, 5 a 6,
+- doplniť prepisy všetkých 6 videí,
+- doplniť kapitoly, ak existujú,
+- doplniť hashtagy a tagy zo Studia,
+- po doplnení prepisov uzavrieť `rules/talkshow/voice-of-tone.md` ako v1.0.
 
-```text
-Interné štandardy a šablóny pre publikovanie NESIA YouTube videí. Prvá verzia: TALKSHOW.
-```
-
-## Vytvorenie repozitára cez GitHub CLI
+## Validácia
 
 ```bash
-gh repo create martin-evis/nesia-youtube-publishing-standards \
-  --private \
-  --description "Interné štandardy a šablóny pre publikovanie NESIA YouTube videí. Prvá verzia: TALKSHOW." \
-  --source=. \
-  --remote=origin \
-  --push
+python scripts/validate_talkshow_source_records.py
 ```
 
-Ak má byť repo verejné, vymeň `--private` za `--public`.
-
-## Manuálne vytvorenie cez web GitHubu
-
-1. Otvor GitHub účet `martin-evis`.
-2. Zvoľ **New repository**.
-3. Repository name: `nesia-youtube-publishing-standards`.
-4. Description: `Interné štandardy a šablóny pre publikovanie NESIA YouTube videí. Prvá verzia: TALKSHOW.`
-5. Visibility: odporúčané `Private`.
-6. Vytvor prázdny repozitár.
-7. Nahraj obsah tohto priečinka alebo pushni cez Git.
-
-## Minimálne pravidlá kvality
-
-- Nevymýšľať mená hostí, pozície, firmy ani citácie.
-- Ak chýba prepis videa, výstup označiť ako draft.
-- Nadpis musí byť zrozumiteľný bez kontextu.
-- Popis musí mať jasný úvod, obsah epizódy, odkazy, CTA a hashtagy.
-- Hashtagy musia priamo súvisieť s videom.
-- Tagy nepoužívať ako spam; sú len doplnkové.
-- Finálny výstup musí prejsť ľudskou kontrolou pred publikovaním.
+Validátor kontroluje, či má každé publikované video povinné súbory a základné metadáta.

@@ -1,34 +1,47 @@
 {
-  "repository": "nesia-youtube-publishing-standards",
-  "version": "v0.1.0-talkshow",
-  "created_date": "2026-06-14",
-  "owner_account": "martin-evis",
-  "video_type": "talkshow",
-  "files": [
-    ".github/ISSUE_TEMPLATE/talkshow-video-metadata.yml",
-    ".gitignore",
-    "AGENTS.md",
-    "CHANGELOG.md",
-    "LICENSE.md",
-    "README.md",
-    "checklists/post-publication-checklist.md",
-    "checklists/pre-publication-checklist.md",
-    "docs/01-repository-workflow.md",
-    "docs/02-youtube-official-rules.md",
-    "docs/03-ai-use-rules.md",
-    "docs/04-future-video-types.md",
-    "docs/05-github-setup.md",
-    "metadata-packages/talkshow/000-template.md",
-    "scripts/validate_youtube_metadata.py",
-    "video-types/talkshow/README.md",
-    "video-types/talkshow/examples/published-videos-analysis.md",
-    "video-types/talkshow/examples/sample-output-package.md",
-    "video-types/talkshow/prompts/generate-talkshow-metadata.md",
-    "video-types/talkshow/source-videos.md",
-    "video-types/talkshow/tags-hashtags-metadata.md",
-    "video-types/talkshow/templates/youtube-talkshow-template.md",
-    "video-types/talkshow/thumbnail-rules.md",
-    "video-types/talkshow/title-description-rules.md",
-    "video-types/talkshow/workflow.md"
+  "repo": "nesia-youtube-publishing-standards",
+  "version": "v0.4.0-public-content-architecture",
+  "date": "2026-06-14",
+  "scope": "NESIA YouTube / TALKSHOW",
+  "public_repo_safe": true,
+  "source_videos_count": 6,
+  "primary_content_path": "content/talkshow/published",
+  "playlist_url": "https://www.youtube.com/playlist?list=PLUXZ_uBD6mO7SBnGWdxhZYnBHK6nHkrRL",
+  "notes": [
+    "GitHub stores text, metadata, rules, templates and prompts, not video files.",
+    "Internal YouTube Studio data should not be committed to a public repository.",
+    "Voice of tone remains draft until transcripts and missing descriptions are supplied."
+  ],
+  "source_videos": [
+    {
+      "id": "R4A0CzH93XI",
+      "folder": "2025-06-24-r4a0czh93xi-byvale-miss-hablovicova-majtanova",
+      "format_variant": "full_episode"
+    },
+    {
+      "id": "hKhO7xT_IxQ",
+      "folder": "2025-07-24-hkho7xt-ixq-ai-expert-martin-spano",
+      "format_variant": "full_episode"
+    },
+    {
+      "id": "KdZ-HHPUpWs",
+      "folder": "2025-10-31-kdz-hhpupws-zakaznicka-psychologia-matej-sucha",
+      "format_variant": "full_episode_with_audience_interaction"
+    },
+    {
+      "id": "wnlNvGYrnhw",
+      "folder": "2026-01-wnlnvgyrnhw-bata-gabriela-koncitikova",
+      "format_variant": "full_episode"
+    },
+    {
+      "id": "7MfOiVWXNJg",
+      "folder": "2026-02-22-7mfoivwxnjg-best-of-nesia-talkshow-2025",
+      "format_variant": "best_of_compilation"
+    },
+    {
+      "id": "LU2foQMJVsg",
+      "folder": "2026-06-14-lu2foqmjvsg-zuzana-sebova",
+      "format_variant": "full_episode_with_music_segment"
+    }
   ]
 }

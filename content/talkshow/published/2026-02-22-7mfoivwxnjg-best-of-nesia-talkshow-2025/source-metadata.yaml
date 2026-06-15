@@ -1,0 +1,77 @@
+schema_version: "source-metadata-v1"
+repo_version: "v0.4.0-public-content-architecture"
+record_type: "published_talkshow_source_video"
+record_status: "draft_from_user_supplied_data"
+public_repo_safe: true
+
+video:
+  number: 5
+  id: "7MfOiVWXNJg"
+  url: "https://youtu.be/7MfOiVWXNJg"
+  playlist_url: "https://www.youtube.com/playlist?list=PLUXZ_uBD6mO7SBnGWdxhZYnBHK6nHkrRL"
+  playlist_status: "playlist supplied by user; API confirmation not available"
+  thumbnail_url: "https://i.ytimg.com/vi/7MfOiVWXNJg/maxresdefault.jpg"
+  thumbnail_note: "štandardný maxres náhľad"
+
+publication:
+  published_date_text: "2026-02-22"
+  published_date: "2026-02-22"
+  published_date_precision: "day"
+  verification_status: "user_supplied"
+
+format:
+  video_type: "talkshow"
+  format_variant: "best_of_compilation"
+
+people:
+  moderator: "Andrea Vadkerti"
+  guests:
+    - "rôzni hostia z predchádzajúcich epizód"
+  additional_contributors:
+    - "Martin Spano"
+    - "Gabriela Končitíková"
+    - "Matej Šucha"
+    - "Karin Majtánová"
+    - "Lucia Hablovičová"
+
+current_youtube_metadata:
+  title: "BEST OF NESIA TALKSHOW 2025 s Andreou Vadkerti"
+  description_available: false
+  description_status: "nedostupné z API; doplniť manuálne alebo exportom"
+  hashtags: []
+  hashtags_status: "nedostupné z API; doplniť zo Studia alebo ručne"
+  tags: []
+  tags_status: "nedostupné z API; doplniť zo Studia alebo ručne"
+  chapters_available: null
+  chapters_status: "neznáme; doplniť manuálne, ak existujú"
+
+content:
+  topic_summary_raw: |
+    Zostrih najlepších a najzaujímavejších momentov z NESIA Talkshow za rok 2025. Mix myšlienok o umelej inteligencii, Baťovom systéme líderstva, zákazníckej psychológii, predsudkoch o kráse, hľadaní zmyslu života, prekonávaní strachu a behaviorálnych hackoch.
+  topic_summary_normalized: |
+    Best of zostrih najlepších momentov NESIA Talkshow 2025 ako teaser pre celé epizódy.
+  themes:
+    - "best of"
+    - "teaser"
+    - "AI"
+    - "leadership"
+    - "zákaznícka psychológia"
+    - "krása"
+    - "zmysel života"
+
+performance_public:
+  views:
+    value: 47000
+    relation: "greater_than_from_user_snapshot"
+  likes:
+    value: null
+    relation: "unknown"
+  source: "user supplied snapshot"
+  public_repo_note: "Do public repo nevkladať interné CTR, retenciu, watch time ani traffic sources."
+
+missing_data:
+  - "pôvodný YouTube popis"
+  - "hashtagy"
+  - "tagy / štítky"
+  - "kapitoly"
+  - "prepis / transcript"
