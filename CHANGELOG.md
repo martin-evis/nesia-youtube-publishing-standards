@@ -1,5 +1,33 @@
 # Changelog
 
+## v0.6.1-sync-descriptions-metadata – 2026-06-15
+
+### Opravené / zosúladené
+
+- Zosúladený stav repozitára v `README.md` z `v0.4.0-public-content-architecture` na `v0.6.1-sync-descriptions-metadata`.
+- Zosúladené `source-metadata.yaml` pre zdrojové TALKSHOW videá po doplnení pôvodných YouTube popisov.
+- Pri zdrojových videách sú pôvodné popisy označené ako dostupné, hashtagy a kapitoly sú extrahované z dodaných popisov tam, kde boli dostupné.
+- Zachované otvorené položky: transcripty / titulky, tagy zo Studia, bezpečný výkon pre čerstvé video a presný dátum publikovania pri Baťa epizóde.
+
+### Poznámka
+
+`v0.4.0-public-content-architecture` zostáva historická architektonická verzia. Aktuálny pracovný stav po doplnení a synchronizácii popisov je `v0.6.1-sync-descriptions-metadata`.
+
+## v0.6.0-complete-original-descriptions – 2026-06-15
+
+### Pridané
+
+- Doplnené pôvodné YouTube popisy pre všetkých 6 zdrojových TALKSHOW videí.
+- Doplnené popisy pre videá Matej Šucha, Gabriela Končitíková, BEST OF a Zuzana Šebová.
+
+## v0.5.0-original-descriptions-1-2 – 2026-06-15
+
+### Pridané
+
+- Doplnené pôvodné YouTube popisy pre prvé dve TALKSHOW videá.
+- Pri videu `R4A0CzH93XI` boli extrahované hashtagy a kapitoly.
+- Pri videu `hKhO7xT_IxQ` bol doplnený pôvodný popis a pripravený podklad na synchronizáciu metadát.
+
 ## v0.4.0-public-content-architecture – 2026-06-14
 
 ### Pridané
