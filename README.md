@@ -2,8 +2,8 @@
 
 Repo pre štandardizáciu YouTube publikovania pre NESIA. Aktuálny hlavný formát je **TALKSHOW**.
 
-> Stav tejto verzie: `v0.4.0-public-content-architecture`  
-> Dátum aktualizácie: 2026-06-14  
+> Stav tejto verzie: `v0.6.1-sync-descriptions-metadata`  
+> Dátum aktualizácie: 2026-06-15  
 > GitHub účet: `martin-evis`  
 > Oblasť: YouTube / obsah / štandardizácia
 
@@ -34,12 +34,12 @@ Aktuálna verzia obsahuje 6 zdrojových TALKSHOW videí:
 
 | # | Video | Typ | Stav |
 |---:|---|---|---|
-| 1 | `R4A0CzH93XI` | full episode | základné metadáta doplnené |
-| 2 | `hKhO7xT_IxQ` | full episode | základné metadáta doplnené |
-| 3 | `KdZ-HHPUpWs` | full episode + audience interaction | základné metadáta doplnené |
-| 4 | `wnlNvGYrnhw` | full episode | má pôvodný popis, chýba presný deň publikovania |
-| 5 | `7MfOiVWXNJg` | best-of compilation | samostatný variant, nepoužívať ako bežnú epizódu |
-| 6 | `LU2foQMJVsg` | full episode + music segment | čerstvé video, výkon treba doplniť neskôr |
+| 1 | `R4A0CzH93XI` | full episode | pôvodný popis, hashtagy a kapitoly doplnené |
+| 2 | `hKhO7xT_IxQ` | full episode | pôvodný popis, hashtagy a kapitoly doplnené |
+| 3 | `KdZ-HHPUpWs` | full episode + audience interaction | pôvodný popis, hashtagy a kapitoly doplnené |
+| 4 | `wnlNvGYrnhw` | full episode + music segment | pôvodný popis, hashtagy a kapitoly doplnené; chýba presný deň publikovania |
+| 5 | `7MfOiVWXNJg` | best-of compilation | pôvodný popis a hashtagy doplnené; kapitoly nie sú v popise |
+| 6 | `LU2foQMJVsg` | full episode + music segment | pôvodný popis, hashtagy a kapitoly doplnené; výkon treba doplniť neskôr |
 
 Detailné dáta sú v:
 
@@ -78,50 +78,27 @@ content/talkshow/published/
 │       ├── voice-of-tone-draft-v0.4.md
 │       ├── title-rules-draft-v0.4.md
 │       ├── description-rules-draft-v0.4.md
-│       └── metadata-rules-draft-v0.4.md
+│       ├── metadata-rules-draft-v0.4.md
+│       └── thumbnail-rules-draft-v0.4.md
 ├── templates/
-│   └── talkshow/
 ├── prompts/
-│   └── talkshow/
 ├── outputs/
-│   └── talkshow/
 └── scripts/
-    └── validate_talkshow_source_records.py
 ```
 
-Starší priečinok `video-types/talkshow/` môže zostať ako dokumentačná vrstva k formátu. Zdrojové dáta o publikovaných videách však majú byť primárne v `content/talkshow/published/`.
+## Ako repo používať
 
-## Pracovný postup pre dopĺňanie existujúcich videí
+1. Pri novom TALKSHOW videu najprv vytvor brief podľa `templates/talkshow/new-video-brief-template.md`.
+2. Doplň transcript alebo pracovné poznámky.
+3. Použi prompt `prompts/talkshow/create-youtube-pack-from-transcript.md`.
+4. Výstup ulož do `outputs/talkshow/`.
+5. Po publikovaní doplň finálny záznam do `content/talkshow/published/`.
+6. Pri väčšej zmene aktualizuj `CHANGELOG.md`.
 
-1. Otvor konkrétny priečinok videa v `content/talkshow/published/`.
-2. Pôvodný YouTube popis doplň do `source-description.md`.
-3. Prepis videa doplň do `source-transcript.md`.
-4. Ak doplníš hashtagy, tagy alebo kapitoly, aktualizuj `source-metadata.yaml`.
-5. Aktualizuj `content/talkshow/missing-data-tracker.md`.
-6. Pri významnej zmene dopíš krátky záznam do `CHANGELOG.md`.
+## Aktuálne otvorené položky
 
-## Pracovný postup pre nové TALKSHOW video
-
-1. Vytvor nový priečinok v `content/talkshow/drafts/`.
-2. Použi `templates/talkshow/new-video-brief-template.md`.
-3. Doplň transcript alebo čo najlepší pracovný brief.
-4. Použi prompt `prompts/talkshow/create-youtube-pack-from-transcript.md`.
-5. Výstup ulož do `outputs/talkshow/`.
-6. Pred publikovaním prebehni checklist v `checklists/pre-publication-checklist.md`.
-7. Po publikovaní presuň záznam medzi `published` a doplň finálnu URL.
-
-## Najbližšie kroky
-
-- doplniť pôvodné popisy videí 1, 2, 3, 5 a 6,
-- doplniť prepisy všetkých 6 videí,
-- doplniť kapitoly, ak existujú,
-- doplniť hashtagy a tagy zo Studia,
-- po doplnení prepisov uzavrieť `rules/talkshow/voice-of-tone.md` ako v1.0.
-
-## Validácia
-
-```bash
-python scripts/validate_talkshow_source_records.py
-```
-
-Validátor kontroluje, či má každé publikované video povinné súbory a základné metadáta.
+- Doplnit transcripty / titulky pre 6 zdrojových videí.
+- Doplnit tagy zo Studia, ak budú dostupné.
+- Doplniť bezpečný public výkon pre video `LU2foQMJVsg`.
+- Overiť presný dátum publikovania videa `wnlNvGYrnhw`.
+- Skontrolovať hashtag `#matejsucha` pri videu `wnlNvGYrnhw`, keďže bol ponechaný podľa dodaného pôvodného popisu.
