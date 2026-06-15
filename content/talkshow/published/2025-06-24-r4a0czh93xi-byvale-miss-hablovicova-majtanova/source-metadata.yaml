@@ -1,7 +1,7 @@
 schema_version: "source-metadata-v1"
-repo_version: "v0.4.0-public-content-architecture"
+repo_version: "v0.5.0-original-descriptions-1-2"
 record_type: "published_talkshow_source_video"
-record_status: "draft_from_user_supplied_data"
+record_status: "source_description_added"
 public_repo_safe: true
 
 video:
@@ -33,20 +33,56 @@ people:
 
 current_youtube_metadata:
   title: "Bývalé MISS: Krása nie je len to, čo vidíme navonok | NESIA Talkshow: L. Hablovičová & K. Majtánová"
-  description_available: false
-  description_status: "nedostupné z technického rozhrania; doplniť manuálne alebo exportom"
-  hashtags: []
-  hashtags_status: "nedostupné z API; doplniť zo Studia alebo ručne"
+  description_available: true
+  description_status: "pôvodný YouTube popis dodaný používateľom a uložený v source-description.md"
+  hashtags:
+    - "#nesia"
+    - "#nesiatalkshow"
+    - "#talkshow"
+    - "#andreavadkerti"
+    - "#vadkerti"
+    - "#karinmajtanova"
+    - "#luciahablovicova"
+    - "#krasa"
+    - "#zmysel"
+    - "#dizajn"
+    - "#zeny"
+    - "#miss"
+    - "#sutazkrasy"
+    - "#missworld"
+    - "#missuniverse"
+    - "#zenskasila"
+    - "#pribehyzien"
+    - "#inspiracia"
+    - "#womanpower"
+    - "#nabytoknamieru"
+    - "#prijatieseba"
+  hashtags_status: "extrahované z používateľom dodaného pôvodného YouTube popisu"
   tags: []
   tags_status: "nedostupné z API; doplniť zo Studia alebo ručne"
-  chapters_available: null
-  chapters_status: "neznáme; doplniť manuálne, ak existujú"
+  chapters_available: true
+  chapters_status: "extrahované z používateľom dodaného pôvodného YouTube popisu"
+  chapters:
+    - time: "00:00:05"
+      title: "Úvod talkshow s Andreou Vadkerti"
+    - time: "00:12:30"
+      title: "Osobné príbehy a začiatky modelingovej kariéry u hostiek talkshow: Karin Majtánovej a Lucie Hablovičovej"
+    - time: "00:25:02"
+      title: "Životné rozhodnutia a vnútorná sila"
+    - time: "00:37:32"
+      title: "Rôznorodosť, spoločenský tlak a odvaha vykročiť vlastnou cestou"
+    - time: "00:50:05"
+      title: "Ženské hodnoty v aktuálnej dobe a práca, ktorá dáva zmysel"
+    - time: "01:02:20"
+      title: "Záver a poďakovanie"
 
 content:
   topic_summary_raw: |
     Začiatky v modelingu a na súťažiach Miss, rúcavanie predsudkov o kráse, dynamika partnerských vzťahov, sebadôvera a nachádzanie zmyslu života (škôlka, cestovanie).
   topic_summary_normalized: |
     Krása, predsudky, modeling, Miss, sebadôvera, partnerské vzťahy a hľadanie zmyslu života.
+  description_hook: |
+    Krása, prijatie, sebavedomie a odvaha kráčať vlastnou cestou.
   themes:
     - "krása"
     - "Miss"
@@ -55,6 +91,8 @@ content:
     - "sebadôvera"
     - "vzťahy"
     - "zmysel života"
+    - "prijatie seba"
+    - "ženská sila"
 
 performance_public:
   views:
@@ -67,8 +105,5 @@ performance_public:
   public_repo_note: "Do public repo nevkladať interné CTR, retenciu, watch time ani traffic sources."
 
 missing_data:
-  - "pôvodný YouTube popis"
-  - "hashtagy"
   - "tagy / štítky"
-  - "kapitoly"
   - "prepis / transcript"
